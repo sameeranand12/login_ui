@@ -19,7 +19,6 @@ class EnterField extends StatelessWidget {
           Card(
             elevation: 5,
             child: TextField(
-
               obscureText: isPassword,
               decoration: InputDecoration(
                 border: OutlineInputBorder(

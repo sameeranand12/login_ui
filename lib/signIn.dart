@@ -1,10 +1,6 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:loginflutter/enterField.dart';
 import 'package:loginflutter/forgetPass.dart';
-
 
 import 'signIn.dart';
 
@@ -42,29 +38,21 @@ class _SignInPageState extends State<SignInPage> {
                   ),
                 ),
               ),
-
               SizedBox(
                 height: 6,
               ),
               Container(
-
                 padding: EdgeInsets.fromLTRB(20, 20, 20, 50),
-
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-
                     Text(
                       'Login to your account',
-                      style: TextStyle(
-                          fontSize: 20,
-                        color: Colors.white
-                      ),
+                      style: TextStyle(fontSize: 20, color: Colors.white),
                     ),
                     SizedBox(
                       height: 20,
                     ),
-
                     EnterField('Username'),
                     EnterField('Password', isPassword: true),
                     SizedBox(
@@ -72,18 +60,16 @@ class _SignInPageState extends State<SignInPage> {
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children:[
+                      children: [
                         Container(
-
                           child: Text(
                             'Remember Me',
-                            style: TextStyle(
-                                fontSize: 20,
-                              color: Colors.white
-                            ),
+                            style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                         ),
-                        SizedBox(width: 5,),
+                        SizedBox(
+                          width: 5,
+                        ),
                         InkWell(
                           onTap: () {
                             Navigator.push(
@@ -95,17 +81,9 @@ class _SignInPageState extends State<SignInPage> {
                           },
                           child: Text(
                             'Forget Password ?',
-                            style: TextStyle(
-                                color: Colors.red,
-                                fontSize: 20
-
-                            ),
-
+                            style: TextStyle(color: Colors.red, fontSize: 20),
                           ),
                         ),
-
-
-
                       ],
                     ),
                     SizedBox(
@@ -113,22 +91,21 @@ class _SignInPageState extends State<SignInPage> {
                     ),
                     Container(
                       height: 50,
-                      width: MediaQuery.of(context).size.width/8,
+                      width: MediaQuery.of(context).size.width / 8,
                       color: Colors.blue,
                       child: Center(
-                        child: Text('SIGN IN',style: TextStyle(
+                        child: Text(
+                          'SIGN IN',
+                          style: TextStyle(
                             color: Colors.white,
-                         // fontSize: 30
-                        ),
+                            // fontSize: 30
+                          ),
                         ),
                       ),
                     ),
                   ],
                 ),
               ),
-
-
-
             ],
           ),
         ),

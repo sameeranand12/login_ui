@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:loginflutter/enterField.dart';
 import 'package:loginflutter/terms.dart';
@@ -41,24 +38,17 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   ),
                 ),
               ),
-
               SizedBox(
                 height: 6,
               ),
               Container(
-
                 padding: EdgeInsets.fromLTRB(20, 20, 20, 50),
-
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-
                     Text(
                       'Reset Password',
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white
-                      ),
+                      style: TextStyle(fontSize: 20, color: Colors.white),
                     ),
                     SizedBox(
                       height: 20,
@@ -70,28 +60,26 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                     SizedBox(
                       height: 30,
                     ),
-
                     SizedBox(
                       height: 50,
                     ),
                     Container(
                       height: 50,
-                      width: MediaQuery.of(context).size.width/8,
+                      width: MediaQuery.of(context).size.width / 8,
                       color: Colors.deepOrange,
                       child: Center(
-                        child: Text('RESET PASSWORD',style: TextStyle(
-                          color: Colors.white,
-                          // fontSize: 30
-                        ),
+                        child: Text(
+                          'RESET PASSWORD',
+                          style: TextStyle(
+                            color: Colors.white,
+                            // fontSize: 30
+                          ),
                         ),
                       ),
                     ),
                   ],
                 ),
               ),
-
-
-
             ],
           ),
         ),

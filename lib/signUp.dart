@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:loginflutter/enterField.dart';
 import 'package:loginflutter/terms.dart';
@@ -37,30 +34,24 @@ class _SignUpPageState extends State<SignUpPage> {
                       'assets/images/p3.png',
                     ),
                     width: 234,
-                   // height: MediaQuery.of(context).size.height/2,
+                    // height: MediaQuery.of(context).size.height/2,
                   ),
                 ),
               ),
-
               SizedBox(
                 height: 6,
               ),
               Container(
                 decoration: BoxDecoration(
-                    color:Colors.white,
-                  borderRadius: BorderRadius.circular(5)
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5)),
                 padding: EdgeInsets.fromLTRB(20, 20, 20, 50),
-
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-
                     Text(
                       'Register new account',
-                      style: TextStyle(
-                          fontSize: 20
-                      ),
+                      style: TextStyle(fontSize: 20),
                     ),
                     SizedBox(
                       height: 20,
@@ -74,47 +65,35 @@ class _SignUpPageState extends State<SignUpPage> {
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children:[
+                      children: [
                         Container(
-
-                             child: Text(
-                                'I accept the',
-                                style: TextStyle(
-                                    fontSize: 20
-                                ),
+                          child: Text(
+                            'I accept the',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Terms(),
                               ),
-    ),
-                              SizedBox(width: 5,),
-                              InkWell(
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => Terms(),
-                                    ),
-                                  );
-                                },
-                                child: Text(
-                                  'terms and conditions',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontSize: 20
-
-                                  ),
-
-                                ),
-                              ),
-
-
-
+                            );
+                          },
+                          child: Text(
+                            'terms and conditions',
+                            style: TextStyle(color: Colors.red, fontSize: 20),
+                          ),
+                        ),
                       ],
                     ),
                   ],
                 ),
               ),
-
-
-
             ],
           ),
         ),

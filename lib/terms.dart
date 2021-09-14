@@ -13,18 +13,18 @@ class Terms extends StatelessWidget {
         child: Column(
           children: [
             Row(
-             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 InkWell(
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(Icons.arrow_back_ios,
-                  color: Colors.white,),
+                  child: Icon(
+                    Icons.arrow_back_ios,
+                    color: Colors.white,
+                  ),
                 ),
-                SizedBox(
-                  width: 35
-                ),
+                SizedBox(width: 35),
                 Container(
                   child: Center(
                     child: Image(
@@ -38,31 +38,28 @@ class Terms extends StatelessWidget {
                 )
               ],
             ),
-                     SizedBox(
-                       height: 20,
-                     ),
-                     Container(
-                       child: Text(
-                         'TERMS AND CONDITIONS',
-                         style: TextStyle(
-                           color: Colors.white,
-                           fontSize: 25,
-                           fontWeight: FontWeight.bold
-                         ),
-                       ),
-                     ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              child: Text(
+                'TERMS AND CONDITIONS',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
             SizedBox(
               height: 18,
             ),
             Container(
               child: Center(
                 child: Text(
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vulputate malesuada cursus sedLorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vulputate malesuada cursus sedDui vulputate malesuada cursus sed .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vulputate malesuada cursus sed'
-                      ,
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vulputate malesuada cursus sedLorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vulputate malesuada cursus sedDui vulputate malesuada cursus sed .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vulputate malesuada cursus sed',
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 15,
-
+                    color: Colors.white,
+                    fontSize: 15,
                   ),
                 ),
               ),

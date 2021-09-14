@@ -11,14 +11,15 @@ class HomePage extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top: MediaQuery.of(context).size.height/10),
+            margin:
+                EdgeInsets.only(top: MediaQuery.of(context).size.height / 10),
             child: Center(
               child: Image(
                 image: AssetImage(
                   'assets/images/p3.png',
                 ),
                 //width: 234,
-                height: MediaQuery.of(context).size.height/2,
+                height: MediaQuery.of(context).size.height / 2,
               ),
             ),
           ),
@@ -35,14 +36,13 @@ class HomePage extends StatelessWidget {
               );
             },
             child: Container(
-
               height: 30,
-              width: MediaQuery.of(context).size.width/2,
+              width: MediaQuery.of(context).size.width / 2,
               color: Colors.deepOrange,
               child: Center(
-                child: Text('REGISTER',style: TextStyle(
-                  color: Colors.white
-                ),
+                child: Text(
+                  'REGISTER',
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
@@ -61,12 +61,12 @@ class HomePage extends StatelessWidget {
             },
             child: Container(
               height: 30,
-              width: MediaQuery.of(context).size.width/2,
+              width: MediaQuery.of(context).size.width / 2,
               color: Colors.blue,
               child: Center(
-                child: Text('I ALREADY HAVE AN ACCOUNT',style: TextStyle(
-                    color: Colors.white
-                ),
+                child: Text(
+                  'I ALREADY HAVE AN ACCOUNT',
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
